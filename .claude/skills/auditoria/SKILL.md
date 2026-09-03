@@ -135,9 +135,12 @@ Imprime en cada corrida la primera línea de `VERSION`.
 Si tienes acceso a la red, mira
 `https://raw.githubusercontent.com/blu7print/la-fabrica/main/VERSION`. Si
 responde y trae una versión más nueva, avisa en una línea: "hay una versión
-nueva, corre `/actualizar`". **Si no responde, no digas nada**: mientras el
-repositorio siga cerrado no responder es lo esperado, y un aviso de error cada
-vez sería ruido.
+nueva, corre `/actualizar`".
+
+**Si no puedes comprobarlo, no digas nada.** Da igual si la respuesta fue un
+error, si no había red o si ni siquiera intentaste: mientras el repositorio siga
+cerrado, no poder comprobarlo es lo esperado. Un "no pude verificar la versión"
+en cada corrida es ruido que le hace pensar al dueño que algo está roto.
 
 ## Guarda el informe
 
