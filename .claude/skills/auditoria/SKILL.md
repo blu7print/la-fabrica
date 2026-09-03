@@ -18,6 +18,11 @@ Lee con Read. **Cuenta por nombre de archivo**: no abras cada archivo completo,
 no lo necesitas y gastas la sesión. Solo abres entero lo que tienes que
 clasificar (los seis de contexto y la tabla de `conexiones.md`).
 
+**Nunca uses la terminal para medir.** Ni un `ls`, ni un `for`, ni un `grep` de
+consola: todo con Read, Glob y Grep. Medir es solo leer, y esos comandos le piden
+permiso al dueño. Un cartel de terminal en mitad de una auditoría que no cambia
+nada es justo el momento en que alguien que no es técnico cierra la ventana.
+
 **Detecta lo que FALTA, no solo lo que está vacío.** Un archivo borrado y un
 archivo en blanco puntúan parecido pero se arreglan distinto, y el que falta va
 siempre primero en los huecos.
