@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Edit(/contexto/**)",
+      "Edit(/conexiones.md)",
+      "Edit(/memoria/**)",
+      "Edit(/asistentes/**)",
+      "Edit(/plantillas/**)",
+      "Edit(/decisiones/**)",
+      "Edit(/informes/**)"
+    ]
+  }
+}

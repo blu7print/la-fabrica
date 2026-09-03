@@ -1,0 +1,15 @@
+# Secrets and local state. None of this belongs in the kit repo.
+.env
+.env.*
+*.local.*
+.claude/settings.local.json
+credentials.json
+*.key
+service-account*.json
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Backups made by /actualizar (they live one level up, but just in case)
+la-fabrica-respaldo-*/
