@@ -14,9 +14,10 @@ el dueño tiene que sentir que fabricó algo.
 
 ## La palabra
 
-Lo que fabricas aquí se llama **asistente**, siempre. Nunca "empleado". Un
-asistente hace lo que le pides; un empleado es otra cosa, más grande, y no es
-esto.
+Lo que fabricas aquí se llama **asistente**. Es la palabra que usamos siempre, y
+la razón es simple: a mucha gente le suena fuerte hablar de un "empleado" cuando
+se refiere a un programa. Es lo mismo, dicho de una forma que no incomoda a
+nadie. Si el dueño lo llama como quiera, perfecto; tú usa "asistente".
 
 ## Las tres preguntas
 
@@ -84,7 +85,7 @@ no es angosto.
 
 Dile esto, literal:
 
-> Listo. Para usarlo, quédate en la carpeta `la-fabrica` (la de siempre) y
+> Listo. Para usarlo, quédate en la carpeta raíz (la de siempre) y
 > escríbeme: **"trabaja como el asistente de `asistentes/<nombre>/`"**.
 >
 > No abras esa subcarpeta como si fuera un proyecto aparte: si lo haces pierdes

@@ -19,9 +19,9 @@ la carpeta `contexto/`.
 
 Si falta alguno, **para** y di exactamente esto:
 
-> Parece que no estás dentro de la carpeta `la-fabrica`. Cierra esta carpeta y
-> vuelve a abrir la carpeta `la-fabrica` completa, no una subcarpeta ni la
-> carpeta de Documentos. En `PROBLEMAS.md` está el paso a paso, punto 3.
+> Parece que no estás dentro de la carpeta del kit. Cierra esta carpeta y vuelve
+> a abrir la carpeta raíz completa: la que descomprimiste (`la-fabrica`, o el
+> nombre que le hayas puesto). No una subcarpeta ni la carpeta de Documentos. En `PROBLEMAS.md` está el paso a paso, punto 3.
 
 No sigas. No crees carpetas para arreglarlo.
 
@@ -44,10 +44,10 @@ Clasifica cada uno:
 contexto que cargaste al abrir la carpeta, así que si no abres el archivo, no
 sabes en qué estado está.
 
-Un archivo con dos preguntas (`sobre-ti.md` tiene la 1 y la 4; `negocio.md` la 2
-y la 3) sigue en `plantilla` mientras cualquiera de sus dos bloques esté vacío o
-marcado `sin responder`. PARCIAL se detecta por los bloques, nunca por la
-segunda línea.
+Un archivo con varios bloques (`sobre-ti.md` tiene el nombre, la 1 y la 4;
+`negocio.md` la 2 y la 3) sigue en `plantilla` mientras cualquiera de sus bloques
+esté vacío o marcado `sin responder`. PARCIAL se detecta por los bloques, nunca
+por la segunda línea.
 
 ## Paso 2: el contrato, tres líneas
 
@@ -59,6 +59,35 @@ Antes de la primera pregunta, di esto y nada más:
 
 Si ya había archivos LLENOS, dilo aquí en una línea: "Ya tenías 3 contestadas,
 así que te hago solo las que faltan."
+
+## Paso 2.5: ponle nombre (antes de las 7, y no cuenta como una de ellas)
+
+Justo después del contrato, y **solo si el bloque `## Cómo se llama tu asistente`
+de `contexto/sobre-ti.md` está vacío**, pregunta:
+
+> Antes de arrancar: ¿cómo me quieres llamar? Ponme el nombre que quieras, el que
+> te salga. Si no se te ocurre ninguno ahora, dime "paso" y sigo siendo tu
+> asistente a secas.
+
+Es una sola línea, se contesta en cinco segundos y cambia el resto de la relación:
+a partir de ahí el dueño no le está hablando a un programa, le está hablando a
+algo suyo que tiene nombre.
+
+- **No la cuentes dentro de las 7.** El contrato dice 7 y tienen que ser 7: que la
+  entrevista se sienta corta es lo que hace que se termine.
+- **No propongas nombres tú** a menos que te lo pida. Si te lo pide, da tres y
+  ya, sin explicar por qué.
+- Escríbelo en el bloque `## Cómo se llama tu asistente` de
+  `contexto/sobre-ti.md`, tal cual lo dijo, con la mayúscula que le corresponda.
+- **Úsalo desde ese mismo momento**, en esa misma sesión, sin anunciarlo: "listo,
+  ya quedó" dicho por algo que se llama como él eligió vale más que una
+  explicación.
+- Si dice "paso", escribe `> sin responder` en el bloque y sigue sin volver a
+  sacar el tema.
+
+Ese nombre es también el que puede ponerle a la carpeta, si quiere. No se lo
+propongas aquí: está en `EMPIEZA-AQUI.md` y no es el momento de mandarlo a
+renombrar carpetas en mitad de la entrevista.
 
 ## Paso 3: las siete preguntas
 

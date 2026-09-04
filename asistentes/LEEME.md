@@ -12,7 +12,7 @@ un archivo `CLAUDE.md` que dice qué hace y qué no.
 
 ## Cómo se usa uno
 
-Desde la carpeta raíz `la-fabrica`, dile a tu asistente:
+Desde la carpeta raíz (la de siempre, la que abres), dile a tu asistente:
 
 > "trabaja como el asistente de `asistentes/cotizaciones/`"
 

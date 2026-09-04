@@ -57,7 +57,10 @@ confirmación.** No sigas sin un sí explícito.
 
 ### 3. Respalda todo
 
-Copia la carpeta entera a `../la-fabrica-respaldo-AAAA-MM-DD/`, un nivel arriba.
+Copia la carpeta entera un nivel arriba, a
+`../<nombre-de-esta-carpeta>-respaldo-AAAA-MM-DD/`. Usa el nombre real de la
+carpeta en la que estás: el dueño pudo haberla renombrado con el nombre que le
+puso a su asistente, así que no des por hecho `la-fabrica`.
 
 Dile antes de hacerlo que esta es **la única vez** que escribes fuera de la
 carpeta, y por qué. Si el respaldo falla, **para**: sin respaldo no se sigue.
@@ -99,7 +102,8 @@ Borra la temporal. Muéstrale, en tres líneas:
 
 Cuando la automática no está disponible, o si algo falla:
 
-1. Descomprime el kit nuevo **al lado** del viejo, sin encimarlo.
+1. Descomprime el kit nuevo **al lado** del viejo, sin encimarlo. Si le habías
+   puesto otro nombre a tu carpeta, pónselo también a la nueva cuando termines.
 2. Copia del viejo al nuevo tus siete cosas: `contexto/`, `memoria/`,
    `asistentes/`, `plantillas/`, `decisiones/`, `informes/` y `conexiones.md`.
    Reemplaza cuando pregunte: lo tuyo gana.

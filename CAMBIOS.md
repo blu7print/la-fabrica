@@ -22,11 +22,15 @@ La primera. Incluye:
 - Las siete habilidades: `/conoceme`, `/arranca`, `/mi-voz`, `/fabrica`,
   `/auditoria`, `/siguiente-nivel` y `/actualizar`.
 - La entrevista de siete preguntas que llena tu contexto sin que escribas
-  archivos a mano.
+  archivos a mano, y que arranca preguntándote cómo quieres llamar a tu
+  asistente.
+- Puedes ponerle a la carpeta el nombre que quieras: nada del kit depende de que
+  se llame `la-fabrica`.
 - La auditoría de cinco pilares con puntaje sobre 100 y tres huecos con su
   siguiente paso.
-- `EMPIEZA-AQUI.md` y `PROBLEMAS.md` con las diez fallas más comunes.
+- `EMPIEZA-AQUI.md` y `PROBLEMAS.md` con las once fallas más comunes.
 - Permisos pre-aprobados para que tu asistente escriba en tus carpetas sin
   interrumpirte a cada rato.
 
-Probado en Linux. La verificación en Windows y Mac está pendiente.
+Probado en Linux con Claude. Funciona también con Codex, que lee el mapa de
+`AGENTS.md`. La verificación en Windows y Mac está pendiente.

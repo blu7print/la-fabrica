@@ -1,6 +1,6 @@
 # Problemas
 
-Las diez fallas más comunes, con la solución en una línea. Si la tuya no está
+Las once fallas más comunes, con la solución en una línea. Si la tuya no está
 aquí, escríbela en el canal **Preguntas** de la comunidad: así queda para el que
 venga después.
 
@@ -8,16 +8,19 @@ venga después.
 
 **1. "No encuentro la terminal."**
 No la necesitas. Abre la app de Claude, pestaña **Code**, elige **Local**, luego
-**Seleccionar carpeta**, y selecciona `la-fabrica`.
+**Seleccionar carpeta**, y selecciona la carpeta del kit.
 
 **2. "Me pide pagar" o "no me aparece Claude Code."**
-Claude Code necesita un plan de pago; el plan gratuito no lo incluye. Cualquier
-plan que lo incluya sirve.
+Claude Code necesita un plan de pago; el gratuito de Claude no lo incluye. Si
+todavía no quieres pagar, prueba el kit con **Codex** (de OpenAI): funciona
+incluso con la cuenta gratuita de ChatGPT, aunque el límite gratuito se agota
+rápido. La ruta probada y la del video es la de Claude.
 
 **3. "Escribo `/` y no me salen los comandos."**
-Abriste la carpeta equivocada. Cierra y vuelve a abrir **`la-fabrica`**, la
-carpeta raíz completa: nunca una subcarpeta como `contexto/`, y nunca tu carpeta
-de Documentos entera.
+Abriste la carpeta equivocada. Cierra y vuelve a abrir **la carpeta raíz
+completa**, la que descomprimiste (`la-fabrica`, o el nombre que le hayas
+puesto): nunca una subcarpeta como `contexto/`, y nunca tu carpeta de Documentos
+entera.
 
 **4. "Me pregunta si confío en la carpeta" o "me pide permiso por cada archivo."**
 Di que sí a la pregunta de confianza: es tu carpeta y la acabas de descomprimir.
@@ -49,10 +52,16 @@ preguntarte: ese archivo pesa más que su criterio.
 
 **9. "No veo la carpeta `.claude`."**
 Está oculta porque su nombre empieza con punto. No pasa nada: **copia siempre la
-carpeta `la-fabrica` entera**, nunca su contenido suelto, y lo oculto viaja con
+carpeta del kit entera**, nunca su contenido suelto, y lo oculto viaja con
 ella.
 
-**10. "¿Cómo actualizo?"**
+**10. "¿Le puedo cambiar el nombre a la carpeta?"**
+Sí. Ponle el nombre que le pusiste a tu asistente si quieres. Nada del kit
+depende de que se llame `la-fabrica`. Eso sí: sin acentos, sin eñes y sin
+espacios (usa guiones), porque en Windows y OneDrive esos nombres rompen la ruta
+sin avisar.
+
+**11. "¿Cómo actualizo?"**
 Escribe `/actualizar`. Si te responde que el repositorio todavía no está abierto,
 usa la ruta manual **"lo tuyo viaja"**: descomprime el kit nuevo, copia tus siete
 cosas (`contexto/`, `memoria/`, `asistentes/`, `plantillas/`, `decisiones/`,

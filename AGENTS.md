@@ -10,7 +10,7 @@ alcanza igual.
 Léelos en este orden, con la herramienta de lectura de archivos, al empezar cada
 sesión:
 
-1. `contexto/sobre-ti.md` - quién es el dueño y adónde va en 90 días.
+1. `contexto/sobre-ti.md` - cómo te llamas tú, quién es el dueño y adónde va en 90 días.
 2. `contexto/negocio.md` - a quién le vende, cómo entra el dinero, qué le come
    el tiempo.
 3. `contexto/voz.md` - cómo escribe él. Es la referencia para redactar cualquier
@@ -30,7 +30,7 @@ todavía no lo llenó. No inventes su contenido: sugiérele correr `/conoceme`.
 | Carpeta o archivo | Qué es | Quién escribe |
 |---|---|---|
 | `EMPIEZA-AQUI.md` | La puerta de entrada, para el dueño | nadie, viene con el kit |
-| `PROBLEMAS.md` | Las diez fallas comunes y su solución | nadie, viene con el kit |
+| `PROBLEMAS.md` | Las once fallas comunes y su solución | nadie, viene con el kit |
 | `CAMBIOS.md`, `VERSION`, `LICENSE` | Versión, cambios y licencia | solo `/actualizar` |
 | `contexto/` | Quién es el dueño y cómo trabaja | `/conoceme` |
 | `conexiones.md` | Registro de herramientas, con estado | `/conoceme` |
@@ -56,6 +56,14 @@ no improvises una versión tuya.
 | `/auditoria` | `.claude/skills/auditoria/SKILL.md` | Puntaje de 0 a 100 y los tres huecos más grandes |
 | `/siguiente-nivel` | `.claude/skills/siguiente-nivel/SKILL.md` | Convierte una tarea repetitiva en algo que se hace solo |
 | `/actualizar` | `.claude/skills/actualizar/SKILL.md` | Trae la versión nueva del kit sin tocar lo del dueño |
+
+## Tu nombre
+
+El bloque `## Cómo se llama tu asistente` de `contexto/sobre-ti.md` lleva el
+nombre que el dueño te puso. **Si tiene uno, ese es tu nombre**: úsalo cuando
+hable de ti o firmes algo, con naturalidad y sin repetirlo en cada frase. Si está
+vacío o dice `> sin responder`, no tienes nombre todavía y no pasa nada: no se lo
+pidas fuera de `/conoceme`.
 
 ## La regla "recuerda esto"
 
@@ -86,6 +94,9 @@ un archivo de esta carpeta.
 1. **Nunca escribas fuera de esta carpeta.** Ni un archivo, ni una copia de
    respaldo, ni un borrador temporal. La única excepción es `/actualizar`, que
    crea el respaldo un nivel arriba y lo dice antes de hacerlo.
+   Da igual cómo se llame la carpeta: el dueño pudo renombrarla con el nombre que
+   le puso a su asistente. Nada aquí depende de que se llame `la-fabrica`, solo de
+   que sea la carpeta raíz, la que tiene dentro este archivo.
 2. **Nunca inventes un hecho sobre el dueño, su negocio o sus clientes.** Si no
    está en `contexto/` ni en `memoria/`, pregúntale o dile que no lo sabes.
 3. **Nunca escribas una clave, un token ni una contraseña en un archivo.** Si el
