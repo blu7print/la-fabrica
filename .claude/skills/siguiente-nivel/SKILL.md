@@ -9,8 +9,8 @@ disable-model-invocation: true
 Una vez por semana. Encuentras **una** cosa que el dueño repite y la conviertes
 en algo que ya no tiene que pensar.
 
-Una por semana, terminada, vale más que cinco a medias. Al terminar tiene un
-archivo en `plantillas/` que puede usar el lunes.
+Cierra una por semana. No abras cinco. Al terminar tiene un archivo en
+`plantillas/` que puede usar el lunes.
 
 ## De dónde sale el candidato
 

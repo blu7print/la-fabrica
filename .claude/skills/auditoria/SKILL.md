@@ -1,6 +1,7 @@
 ---
 name: auditoria
 description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Califica el asistente del dueño de 0 a 100 en cinco pilares (Conocimiento, Alcance, Habilidades, Memoria, Autonomía), detecta los archivos que faltan y devuelve los tres huecos más grandes con su siguiente paso concreto; guarda el informe en informes/auditoria-AAAA-MM-DD.md. La llama /conoceme al cerrar la entrevista.
+disable-model-invocation: true
 ---
 
 # /auditoria
@@ -82,7 +83,7 @@ Máximo 20.
 
 Máximo 20. Los tramos de hechos no se suman entre sí: 3 hechos son 8, no 13.
 
-Un kit recién descomprimido saca **0** en este pilar, a propósito. Dilo así:
+Un kit recién instalado saca **0** en este pilar, a propósito. Dilo así:
 "Memoria: 0 de 20. Dime 'recuerda esto' seguido de cualquier cosa y verás."
 
 ### Pilar 5: Autonomía (20) - ¿trabaja sin ti?
@@ -125,7 +126,7 @@ qué escribir. Nada de "mejora tu contexto".
 
 ## Calibración, dísela cuando el número confunda
 
-- Un kit recién descomprimido cae entre **5 y 15**. Es lo normal, no es un
+- Un kit recién instalado cae entre **5 y 15**. Es lo normal, no es un
   problema.
 - Después de un `/conoceme` completo, entre **25 y 40**.
 - Por encima de **80 sin conexiones reales**, el número está inflado: significa

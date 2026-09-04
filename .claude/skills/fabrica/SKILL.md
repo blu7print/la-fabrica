@@ -1,6 +1,6 @@
 ---
 name: fabrica
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Con tres preguntas crea un asistente nuevo con un solo trabajo en asistentes/<nombre>/CLAUDE.md, hereda la voz y las reglas del dueño, y le explica cómo usarlo desde la carpeta raíz. Es la habilidad de marca del kit.
+description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Con tres preguntas crea un asistente nuevo con un solo trabajo en asistentes/<nombre>/CLAUDE.md, hereda la voz y las reglas del dueño, y le explica cómo usarlo desde la carpeta raíz.
 disable-model-invocation: true
 ---
 
@@ -9,9 +9,8 @@ disable-model-invocation: true
 Creas un asistente que hace **una sola cosa**, y la hace mejor que el general
 porque no está pensando en nada más.
 
-Esta es la habilidad que le da el nombre al kit, y la que cierra la idea: tú eres
-La Fábrica, y esto es lo que fabricas. Trátala como tal: al terminar, el dueño
-tiene que sentir que fabricó algo.
+Tú eres La Fábrica y esto es lo que fabricas. Al terminar tiene que quedar un
+asistente que funciona, no una descripción de uno.
 
 ## La palabra
 

@@ -1,6 +1,6 @@
 ---
 name: actualizar
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Trae la versión nueva del kit desde su repositorio: respalda la carpeta entera, reemplaza únicamente los nueve elementos que vienen con el kit y nunca toca los siete del dueño; si el repositorio no está abierto todavía, explica la ruta manual "lo tuyo viaja".
+description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Trae la versión nueva del kit desde github.com/blu7print/la-fabrica: deja el repositorio del dueño limpio, clona a una carpeta temporal fuera, reemplaza únicamente los diez elementos que vienen con el kit, nunca toca los del dueño, y cierra con un commit que se puede deshacer.
 disable-model-invocation: true
 ---
 
@@ -13,19 +13,20 @@ lo del dueño no se toca jamás.**
 
 ## El reparto, memorízalo
 
-**Lo que viene con el kit (9 elementos, se reemplazan):**
+**Lo que viene con el kit (10 elementos, se reemplazan):**
 
-`.claude/skills/`, `.claude/settings.json`, `AGENTS.md`, `CLAUDE.md`,
+`.claude/skills/`, `.claude/settings.json`, `AGENTS.md`, `CLAUDE.md`, `README.md`,
 `EMPIEZA-AQUI.md`, `PROBLEMAS.md`, `CAMBIOS.md`, `VERSION`, `LICENSE`.
 
-**Del dueño (7 elementos, no se tocan nunca):**
+**Del dueño (no se tocan nunca):**
 
-`contexto/`, `memoria/`, `asistentes/`, `plantillas/`, `decisiones/`,
-`informes/`, `conexiones.md`.
+`contexto/`, `memoria/`, `asistentes/`, `plantillas/`, `decisiones/`, `informes/`,
+`conexiones.md`.
 
-**Excepción explícita:** `.claude/settings.local.json` es del dueño. Lo crea
-Claude Code cuando él aprueba permisos. **Ninguna actualización lo toca**, aunque
-viva dentro de `.claude/`.
+**Dos excepciones explícitas**, ambas del dueño aunque parezcan del kit:
+
+- `.claude/settings.local.json` lo crea Claude Code cuando él aprueba permisos.
+- `.gitignore` se envía una sola vez, al instalar. Ninguna actualización lo toca.
 
 ## Los seis pasos
 
@@ -37,16 +38,12 @@ Lee la primera línea de `VERSION` (la local) y pide la remota:
 https://raw.githubusercontent.com/blu7print/la-fabrica/main/VERSION
 ```
 
-**Si no la alcanzas** (el repositorio todavía está cerrado, o no hay red),
-detente aquí y dile exactamente esto:
+Si no la alcanzas, es un problema de red. Dile:
 
-> El repositorio todavía no está abierto, así que la actualización automática aún
-> no funciona. Cuando salga una versión nueva en la comunidad, se actualiza a
-> mano y toma dos minutos. Te digo cómo abajo.
+> No pude alcanzar GitHub para ver si hay una versión nueva. Revisa tu conexión y
+> vuelve a intentarlo en un rato.
 
-Y muéstrale la **ruta manual** de la sección siguiente. **Mientras el repositorio
-siga cerrado, este es el comportamiento correcto de la versión 1.0.0**, no una
-falla: no lo presentes como un error.
+Y termina. No inventes una ruta alterna.
 
 Si la remota es igual a la local, dile que ya está al día y termina.
 
@@ -55,61 +52,76 @@ Si la remota es igual a la local, dile que ya está al día y termina.
 Trae el `CAMBIOS.md` remoto y muéstrale las entradas nuevas. **Pide
 confirmación.** No sigas sin un sí explícito.
 
-### 3. Respalda todo
+### 3. Deja su repositorio limpio
 
-Copia la carpeta entera un nivel arriba, a
-`../<nombre-de-esta-carpeta>-respaldo-AAAA-MM-DD/`. Usa el nombre real de la
-carpeta en la que estás: el dueño pudo haberla renombrado con el nombre que le
-puso a su asistente, así que no des por hecho `la-fabrica`.
+Su carpeta es un repositorio de git suyo desde que la instaló. Esa es la red de
+seguridad de esta habilidad, así que se prepara antes de tocar nada.
 
-Dile antes de hacerlo que esta es **la única vez** que escribes fuera de la
-carpeta, y por qué. Si el respaldo falla, **para**: sin respaldo no se sigue.
+Corre `git status`. Si hay cambios sin guardar, díselo en una línea y guárdalos:
+
+> Tienes cambios sin guardar. Los dejo guardados antes de empezar, así puedes
+> volver a este punto si la actualización no te gusta.
+
+```
+git add -A && git commit -m "antes de actualizar"
+```
+
+**Si no hay git en la máquina** (el comando no existe), entonces sí haces respaldo a
+la antigua: copia la carpeta entera un nivel arriba, a
+`../<nombre-de-esta-carpeta>-respaldo-AAAA-MM-DD/`. Usa el nombre real de la carpeta
+en la que estás: el dueño la nombró como quiso. Dile antes de hacerlo que esta es la
+única vez que escribes fuera de la carpeta, y por qué.
+
+**Sin una de las dos redes, no sigas.**
 
 ### 4. Trae la versión nueva
 
-Clona a una carpeta temporal:
+Clona a una carpeta temporal **fuera** de su carpeta:
 
 ```
 git clone --depth 1 https://github.com/blu7print/la-fabrica <temporal>
 ```
 
 Elige los comandos según el sistema del dueño (bash en Mac o Linux, PowerShell en
-Windows) y **muéstraselos antes de correrlos**. Él los aprueba una vez. Git está
-disponible en la ruta recomendada: la app lo pide en Windows y Mac ya lo trae.
-
-Si el clon pide credenciales, es que el repositorio sigue cerrado: vuelve al
-paso 1 y dale la ruta manual.
+Windows) y **muéstraselos antes de correrlos**. Él los aprueba una vez.
 
 ### 5. Reemplaza solo lo del kit
 
-Copia desde la temporal **únicamente los nueve elementos** de la lista de arriba.
+Copia desde la temporal **únicamente los diez elementos** de la lista de arriba.
 
 Uno por uno, por nombre. **Nunca copies la carpeta entera encima**: eso pisaría
 `contexto/`, `memoria/` y todo lo que el dueño construyó. `.claude/skills/` se
 reemplaza completa (borra la vieja y pon la nueva, para que una habilidad que se
 eliminó no quede colgada); `.claude/settings.json` se reemplaza;
-`.claude/settings.local.json` **se queda como está**.
+`.claude/settings.local.json` y `.gitignore` **se quedan como están**.
 
-### 6. Limpia y reporta
+No copies el `.git` de la temporal. El repositorio de esta carpeta es el suyo.
 
-Borra la temporal. Muéstrale, en tres líneas:
+### 6. Limpia, guarda y reporta
+
+Borra la temporal y guarda la actualización en su historial:
+
+```
+git add -A && git commit -m "actualizado a <version>"
+```
+
+Muéstrale, en tres líneas:
 
 - La versión de antes y la de ahora.
 - Qué cambió, sacado de `CAMBIOS.md`.
-- Dónde quedó el respaldo, y que lo puede borrar cuando compruebe que todo anda.
+- Que si algo no le gusta, con decirte **"deshaz la actualización"** vuelves al
+  commit anterior.
 
-## La ruta manual: "lo tuyo viaja"
+Si hiciste respaldo por copia (no había git), en vez de eso dile dónde quedó y que
+lo puede borrar cuando compruebe que todo anda.
 
-Cuando la automática no está disponible, o si algo falla:
+## Deshacer
 
-1. Descomprime el kit nuevo **al lado** del viejo, sin encimarlo. Si le habías
-   puesto otro nombre a tu carpeta, pónselo también a la nueva cuando termines.
-2. Copia del viejo al nuevo tus siete cosas: `contexto/`, `memoria/`,
-   `asistentes/`, `plantillas/`, `decisiones/`, `informes/` y `conexiones.md`.
-   Reemplaza cuando pregunte: lo tuyo gana.
-3. Abre el nuevo con la app de Claude y corre `/auditoria` para confirmar que
-   todo llegó.
-4. Deja el viejo un par de días como respaldo, y después bórralo.
+Si el dueño te dice "deshaz la actualización", vuelves al commit anterior a la
+actualización y se lo confirmas nombrando la versión a la que regresó. Muéstrale el
+comando antes de correrlo.
+
+Con respaldo por copia, deshacer es restaurar la carpeta que copiaste.
 
 ## Promesa de compatibilidad
 
@@ -120,9 +132,11 @@ dilo**: es un error, no una mejora.
 
 ## Reglas
 
-1. **Nunca toques los 7 elementos del dueño.** Ni para "ordenarlos", ni para
-   "arreglar el formato".
-2. **Nunca sigas sin el respaldo hecho.**
+1. **Nunca toques lo del dueño.** Ni para "ordenarlo", ni para "arreglar el
+   formato".
+2. **Nunca sigas sin una red de seguridad**, el commit o la copia.
 3. **Nunca clones dentro de la carpeta del kit.** La temporal va afuera y se borra.
-4. **Muestra los comandos antes de correrlos.** El dueño aprueba una vez, viendo
+4. **Nunca toques el remoto de su repositorio.** `origin` es suyo, para el día que
+   respalde su Fábrica en su propio GitHub.
+5. **Muestra los comandos antes de correrlos.** El dueño aprueba una vez, viendo
    qué aprueba.

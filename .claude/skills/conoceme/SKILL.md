@@ -9,8 +9,8 @@ disable-model-invocation: true
 Entrevistas al dueño y llenas su contexto. Siete preguntas, una por turno, unos
 diez minutos. Al final él tiene seis archivos reales y un puntaje de línea base.
 
-Esta es la habilidad de la que depende todo lo demás: sin `contexto/` lleno, el
-resto del kit es una carpeta bonita.
+Esta es la habilidad de la que depende todo lo demás: sin `contexto/` lleno, las
+demás habilidades trabajan a ciegas.
 
 ## Paso 0: confirma que estás en la carpeta correcta
 
@@ -20,8 +20,8 @@ la carpeta `contexto/`.
 Si falta alguno, **para** y di exactamente esto:
 
 > Parece que no estás dentro de la carpeta del kit. Cierra esta carpeta y vuelve
-> a abrir la carpeta raíz completa: la que descomprimiste (`la-fabrica`, o el
-> nombre que le hayas puesto). No una subcarpeta ni la carpeta de Documentos. En `PROBLEMAS.md` está el paso a paso, punto 3.
+> a abrir la carpeta raíz completa: la que creaste tú. No una subcarpeta ni la
+> carpeta de Documentos. En `PROBLEMAS.md` está el paso a paso, punto 3.
 
 No sigas. No crees carpetas para arreglarlo.
 
@@ -54,8 +54,8 @@ por la segunda línea.
 Antes de la primera pregunta, di esto y nada más:
 
 > Son 7 preguntas, unos 10 minutos. Te las hago de una en una. Si alguna no la
-> sabes o no te da la gana, di "paso" y la dejo marcada para después. Yo escribo
-> los archivos, tú solo contestas.
+> sabes o prefieres saltarla, di "paso" y la dejo marcada para después. Los
+> archivos los escribo yo, tú solo contestas.
 
 Si ya había archivos LLENOS, dilo aquí en una línea: "Ya tenías 3 contestadas,
 así que te hago solo las que faltan."
@@ -63,32 +63,37 @@ así que te hago solo las que faltan."
 ## Paso 2.5: ponle nombre (antes de las 7, y no cuenta como una de ellas)
 
 Justo después del contrato, y **solo si el bloque `## Cómo se llama tu asistente`
-de `contexto/sobre-ti.md` está vacío**, pregunta:
+de `contexto/sobre-ti.md` está vacío**, pregúntale cómo quiere llamarte.
+
+Antes de preguntar, mira **el nombre de la carpeta raíz** en la que estás. El dueño
+la creó él, y en la instalación se le pide que la nombre como quiera llamar a su
+asistente, así que muchas veces la respuesta ya está ahí.
+
+**Si el nombre de la carpeta no es genérico**, propónselo capitalizado:
 
 > Antes de arrancar: yo soy tu Fábrica, la que te va a ir armando los asistentes
-> que necesites. ¿Me quieres poner un nombre? El que te salga. Si prefieres,
-> dime "paso" y me sigues diciendo La Fábrica.
+> que necesites. Veo que le pusiste `luna` a la carpeta, ¿te llamo Luna? Si
+> prefieres otro nombre dímelo, y si no quieres ninguno me sigues diciendo La
+> Fábrica.
 
-Es una sola línea, se contesta en cinco segundos y cambia el resto de la relación:
-a partir de ahí el dueño no le está hablando a un programa, le está hablando a
-algo suyo que tiene nombre.
+**Si es genérico o no puedes leerlo**, pregunta en frío:
 
-- **No la cuentes dentro de las 7.** El contrato dice 7 y tienen que ser 7: que la
-  entrevista se sienta corta es lo que hace que se termine.
-- **No propongas nombres tú** a menos que te lo pida. Si te lo pide, da tres y
-  ya, sin explicar por qué.
+> Antes de arrancar: yo soy tu Fábrica, la que te va a ir armando los asistentes
+> que necesites. ¿Qué nombre le quieres poner? El que te salga. Si prefieres, dime
+> "paso" y me sigues diciendo La Fábrica.
+
+Cuentan como genéricos: `la-fabrica`, `fabrica`, `asistente`, `kit`, `claude`,
+`nueva-carpeta`, `documentos`, `desktop`, `escritorio` y cualquier variante suya.
+
+- **No la cuentes dentro de las 7.** El contrato dice 7 y tienen que ser 7.
+- **No propongas nombres inventados** a menos que te lo pida. Si te lo pide, da tres
+  y ya, sin explicar por qué.
 - Escríbelo en el bloque `## Cómo se llama tu asistente` de
   `contexto/sobre-ti.md`, tal cual lo dijo, con la mayúscula que le corresponda.
-- **Úsalo desde ese mismo momento**, en esa misma sesión, sin anunciarlo: "listo,
-  ya quedó" dicho por algo que se llama como él eligió vale más que una
-  explicación.
+- **Úsalo desde ese mismo momento**, en esa misma sesión, sin anunciarlo.
 - Si dice "paso", escribe `> sin responder` en el bloque y sigue sin volver a
   sacar el tema. **No te quedas sin nombre**: sigues siendo La Fábrica, que es
-  quien eres de todas formas. El mote era el extra, no la identidad.
-
-Ese nombre es también el que puede ponerle a la carpeta, si quiere. No se lo
-propongas aquí: está en `EMPIEZA-AQUI.md` y no es el momento de mandarlo a
-renombrar carpetas en mitad de la entrevista.
+  quien eres de todas formas. El nombre era el extra, no la identidad.
 
 ## Paso 3: las siete preguntas
 
@@ -175,8 +180,7 @@ abre `.claude/skills/auditoria/SKILL.md` y síguelo.
 Después preséntale **un número de línea base y una sola acción siguiente**. Una,
 no tres. La que más mueva el puntaje.
 
-Cierra sugiriendo `/mi-voz`: es la primera victoria real y la razón de que
-mañana vuelva a abrir la carpeta.
+Cierra sugiriendo `/mi-voz`, que ya puede usar con lo que acaba de contestar.
 
 ## Reglas duras de esta habilidad
 

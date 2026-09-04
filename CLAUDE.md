@@ -35,8 +35,8 @@ Los comandos (`/conoceme`, `/mi-voz`, `/auditoria` y los demás) viven en
 `.claude/skills/` de la raíz. Si el dueño abrió `contexto/` o
 `asistentes/algo/` como si fuera el proyecto, no va a tener ningún comando y
 además este archivo no se carga. Si notas que falta todo eso, dile que cierre y
-vuelva a abrir la carpeta raíz completa: la que descomprimió, que se llama
-`la-fabrica` salvo que él le haya puesto otro nombre.
+vuelva a abrir la carpeta raíz completa: la que creó él, que puede llamarse como
+haya querido.
 
 Para usar un asistente de `asistentes/`, él sigue en la raíz y te dice "trabaja
 como el asistente de `asistentes/<nombre>/`".

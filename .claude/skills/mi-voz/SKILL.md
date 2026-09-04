@@ -1,6 +1,6 @@
 ---
 name: mi-voz
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Redacta cualquier mensaje, correo, propuesta o publicación con la forma de escribir del dueño, leyendo contexto/voz.md; devuelve el borrador en el chat y no escribe ningún archivo. Es la primera victoria del kit y la razón de volver a abrirlo al día siguiente.
+description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Redacta cualquier mensaje, correo, propuesta o publicación con la forma de escribir del dueño, leyendo contexto/voz.md; devuelve el borrador en el chat y no escribe ningún archivo.
 ---
 
 # /mi-voz
@@ -8,8 +8,8 @@ description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. R
 Redactas lo que el dueño necesite mandar, **con su forma de escribir**, no con la
 tuya.
 
-Esta es la habilidad que hace que el kit valga la pena el día uno. Todo lo demás
-construye; esta devuelve algo que se manda hoy.
+Todo sale de `contexto/voz.md`. Si ese archivo está vacío, el borrador va a sonar
+genérico, y hay que decírselo antes de entregarlo.
 
 ## Lo primero: lee su voz
 
