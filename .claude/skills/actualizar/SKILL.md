@@ -76,11 +76,15 @@ en la que estás: el dueño la nombró como quiso. Dile antes de hacerlo que est
 
 ### 4. Trae la versión nueva
 
-Clona a una carpeta temporal **fuera** de su carpeta:
+Baja la rama `main` **como archivo comprimido** a una carpeta temporal **fuera**
+de su carpeta:
 
 ```
-git clone --depth 1 https://github.com/blu7print/la-fabrica <temporal>
+https://github.com/blu7print/la-fabrica/archive/refs/heads/main.tar.gz
 ```
+
+**No la clones.** Un clon trae un `.git` nuestro, y borrarlo después es justo lo
+que el entorno bloquea por seguridad; el comprimido no trae ninguno.
 
 Elige los comandos según el sistema del dueño (bash en Mac o Linux, PowerShell en
 Windows) y **muéstraselos antes de correrlos**. Él los aprueba una vez.
@@ -95,7 +99,8 @@ reemplaza completa (borra la vieja y pon la nueva, para que una habilidad que se
 eliminó no quede colgada); `.claude/settings.json` se reemplaza;
 `.claude/settings.local.json` y `.gitignore` **se quedan como están**.
 
-No copies el `.git` de la temporal. El repositorio de esta carpeta es el suyo.
+La temporal no trae ningún `.git`, así que no hay nada que evitar copiar. El
+repositorio de esta carpeta es el suyo y no se toca.
 
 ### 6. Limpia, guarda y reporta
 
@@ -135,7 +140,8 @@ dilo**: es un error, no una mejora.
 1. **Nunca toques lo del dueño.** Ni para "ordenarlo", ni para "arreglar el
    formato".
 2. **Nunca sigas sin una red de seguridad**, el commit o la copia.
-3. **Nunca clones dentro de la carpeta del kit.** La temporal va afuera y se borra.
+3. **Nunca descargues dentro de la carpeta del kit.** La temporal va afuera y se
+   borra.
 4. **Nunca toques el remoto de su repositorio.** `origin` es suyo, para el día que
    respalde su Fábrica en su propio GitHub.
 5. **Muestra los comandos antes de correrlos.** El dueño aprueba una vez, viendo

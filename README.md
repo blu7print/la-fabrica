@@ -55,9 +55,10 @@ rato.
 
 **4. Pega esto tal cual y dale enter:**
 
-> Instala en esta carpeta el kit de https://github.com/blu7print/la-fabrica. Los
-> archivos van directamente aquí, sin crear una subcarpeta. Borra el `.git` que
-> venga con el repositorio y deja esta carpeta como un repositorio nuevo mío:
+> Instala en esta carpeta el kit de https://github.com/blu7print/la-fabrica. Baja
+> el contenido de la rama main como archivo comprimido, **no lo clones**, para que
+> no quede ningún `.git` del repositorio, y déjalo directamente aquí sin crear una
+> subcarpeta. Después deja esta carpeta como un repositorio nuevo mío:
 > `git init -b main`, todo agregado y un primer commit; si git te pide una
 > identidad, configúrala solo para esta carpeta. Al terminar, dime que cierre y
 > vuelva a abrir la carpeta.
@@ -78,8 +79,7 @@ vienen siete preguntas, una por una, unos diez minutos.
 Entra a la carpeta vacía y corre:
 
 ```bash
-git clone --depth 1 https://github.com/blu7print/la-fabrica tmp
-cp -r tmp/. . && rm -rf tmp .git
+curl -L https://github.com/blu7print/la-fabrica/archive/refs/heads/main.tar.gz | tar xz --strip-components=1
 git init -b main
 git config user.name "mi fabrica" && git config user.email "mifabrica@local"
 git add -A && git commit -m "mi fabrica, dia uno"
