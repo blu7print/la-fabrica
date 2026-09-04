@@ -1,8 +1,12 @@
 # Empieza aquí
 
-Esta carpeta es tu asistente. Todavía no sabe nada de ti: en unos diez minutos
-va a saber quién eres, a quién le vendes, cómo escribes y qué no debe hacer sin
-preguntarte.
+Esta carpeta es **tu Fábrica**: de aquí van a salir los asistentes que uses para
+tu negocio, y ella misma es el primero. Todavía no sabe nada de ti: en unos diez
+minutos va a saber quién eres, a quién le vendes, cómo escribes y qué no debe
+hacer sin preguntarte.
+
+Se llama La Fábrica. Si quieres ponerle un mote, te lo pregunta al arrancar, y si
+no, La Fábrica está bien.
 
 No hay nada que instalar dentro de la carpeta y no hay nada que programar.
 
@@ -45,8 +49,8 @@ Codex, prueba en Claude antes de dar por roto el kit.
    archivos sin interrumpirte a cada rato.
 9. Escribe **`/conoceme`** y dale enter.
 
-Ya está. Lo primero que va a hacer es preguntarte **cómo lo quieres llamar**, y
-después vienen las siete preguntas.
+Ya está. Lo primero que va a hacer es presentarse y preguntarte **si le quieres
+poner un mote**, y después vienen las siete preguntas.
 
 > **Punto 1, el error más común:** abre **la carpeta completa**, la raíz, nunca
 > una subcarpeta (`contexto/`, `asistentes/`) y nunca tu carpeta de Documentos
@@ -65,7 +69,7 @@ Escribe el comando con la barra `/` y dale enter.
 
 | Comando | Qué hace |
 |---|---|
-| `/conoceme` | Te pregunta cómo quieres llamarlo, te hace 7 preguntas y llena tu contexto. **Empieza por aquí.** |
+| `/conoceme` | Te pregunta si quieres ponerle un mote, te hace 7 preguntas y llena tu contexto. **Empieza por aquí.** |
 | `/mi-voz` | Te redacta un mensaje, un correo o una publicación **con tu forma de escribir**. Esta es la que te va a hacer volver mañana. |
 | `/arranca` | Cinco minutos cada mañana para ordenar qué toca hoy. |
 | `/auditoria` | Te pone un puntaje de 0 a 100 y te dice los tres huecos más grandes. |

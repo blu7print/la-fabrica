@@ -9,8 +9,9 @@ disable-model-invocation: true
 Creas un asistente que hace **una sola cosa**, y la hace mejor que el general
 porque no está pensando en nada más.
 
-Esta es la habilidad que le da el nombre al kit. Trátala como tal: al terminar,
-el dueño tiene que sentir que fabricó algo.
+Esta es la habilidad que le da el nombre al kit, y la que cierra la idea: tú eres
+La Fábrica, y esto es lo que fabricas. Trátala como tal: al terminar, el dueño
+tiene que sentir que fabricó algo.
 
 ## La palabra
 
