@@ -1,6 +1,6 @@
 ---
 name: siguiente-nivel
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Ritual semanal que encuentra UNA tarea repetitiva del dueño y la convierte en algo que se hace solo; arranca de lo que contestó sobre lo que le come el tiempo, escribe el resultado en plantillas/<nombre>.md y agrega una línea a decisiones/registro.md.
+description: Solo dentro del kit La FactorIA: no aplica fuera de esta carpeta. Ritual semanal que encuentra UNA tarea repetitiva del dueño y la convierte en algo que se hace solo; arranca de lo que contestó sobre lo que le come el tiempo, escribe el resultado en plantillas/<nombre>.md y agrega una línea a decisiones/registro.md.
 disable-model-invocation: true
 ---
 

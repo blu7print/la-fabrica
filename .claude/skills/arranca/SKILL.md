@@ -1,6 +1,6 @@
 ---
 name: arranca
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Ritual de cinco minutos cada mañana que ordena qué toca hoy, elige la única cosa que de verdad importa y guarda lo decidido como una línea nueva en decisiones/registro.md, sin reescribir nada de lo anterior.
+description: Solo dentro del kit La FactorIA: no aplica fuera de esta carpeta. Ritual de cinco minutos cada mañana que ordena qué toca hoy, elige la única cosa que de verdad importa y guarda lo decidido como una línea nueva en decisiones/registro.md, sin reescribir nada de lo anterior.
 disable-model-invocation: true
 ---
 

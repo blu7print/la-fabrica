@@ -13,7 +13,7 @@ No la necesitas. Abre la app de Claude, pestaña **Code**, elige **Local**, lueg
 Claude Code necesita un plan de pago; el gratuito de Claude no lo incluye. Si
 todavía no quieres pagar, prueba el kit con **Codex** (de OpenAI): funciona
 incluso con la cuenta gratuita de ChatGPT, aunque el límite gratuito se agota
-rápido. La ruta probada y la del video es la de Claude.
+rápido. **OpenCode** es la otra opción. El kit funciona igual en los tres.
 
 **3. "Escribo `/` y no me salen los comandos."**
 Casi siempre es una de dos. Si acabas de instalarlo, **cierra la carpeta y vuélvela
@@ -29,11 +29,13 @@ archivos sin interrumpirte; **si no lo aceptaste, te va a pedir permiso a cada
 rato**. Si después te pide algo distinto (borrar, mandar, instalar), lee qué es
 antes de aceptar.
 
-**5. "La instalación me dejó una carpeta dentro de la carpeta."**
-Pasa si los archivos cayeron en una subcarpeta en vez de en la raíz. Dile: "mueve
-todo lo que está dentro de esa subcarpeta a esta carpeta y borra la subcarpeta
-vacía". Sabrás que quedó bien cuando veas `EMPIEZA-AQUI.md` al abrir la carpeta,
-sin entrar a nada.
+**5. "La instalación quedó a medias."**
+Sabrás que quedó bien cuando veas `EMPIEZA-AQUI.md` nada más abrir la carpeta, sin
+entrar a ninguna subcarpeta. Si no está, dile: "la instalación quedó incompleta,
+vuelve a seguir las instrucciones de `INSTALAR.md` desde el principio". Si los
+archivos te quedaron dentro de una subcarpeta (solo pasa por la vía de emergencia,
+la del archivo comprimido), dile: "mueve todo lo que está dentro de esa subcarpeta
+a esta carpeta y borra la subcarpeta vacía".
 
 **6. "Cerré la ventana y perdí todo."**
 No perdiste nada. Lo que ya contestaste está escrito en `contexto/`, archivo por
@@ -69,6 +71,30 @@ la ruta sin avisar. Después de renombrarla, ábrela otra vez desde la app.
 Escribe `/actualizar`. Trae la versión nueva desde GitHub y no toca nada de lo tuyo.
 Si te dice que no pudo alcanzar GitHub, es tu conexión: inténtalo más tarde.
 
----
+**13. "Me dice que no encuentra git."**
+Es lo único que hace falta instalar aparte, y se hace una vez:
 
-Probado en Linux. La verificación en Windows y Mac está pendiente.
+- **Windows:** instálalo desde git-scm.com (Git for Windows), dándole siguiente a
+  todo. Después cierra la carpeta y vuélvela a abrir.
+- **Mac:** abre la terminal, escribe `git --version` y dale enter. El sistema te
+  ofrece instalar las "Command Line Tools": acepta y espera a que termine.
+- **Linux:** `sudo apt install git`.
+
+Si de verdad no puedes instalarlo, dile a tu asistente: "instálalo con la vía de
+emergencia del archivo comprimido". Funciona igual, pero sin git te quedas sin la
+red de seguridad para deshacer una actualización.
+
+**14. "Pegué la instrucción y no supo qué hacer."**
+Le pasa si no pudo abrir la página con las instrucciones. Pégale esto otro, tal
+cual:
+
+> Primero mira si en esta carpeta ya existe `AGENTS.md` o una carpeta `.git`. Si
+> existe cualquiera de los dos, no corras nada y dime que use `/actualizar`. Si la
+> carpeta está vacía, corre estos comandos en este orden, y muéstramelos antes:
+> `GIT_TERMINAL_PROMPT=0 git init -b main`, luego
+> `git fetch https://github.com/blu7print/la-fabrica main`, luego
+> `git checkout FETCH_HEAD -- .`. Después abre el archivo `INSTALAR.md` que acaba
+> de aparecer aquí y sigue desde su paso 2, al pie de la letra.
+
+Esa comprobación del principio no es un adorno: sobre una carpeta que ya tiene tu
+contexto lleno, esos comandos lo devolverían a como venía en blanco.

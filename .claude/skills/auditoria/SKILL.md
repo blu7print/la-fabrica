@@ -1,6 +1,6 @@
 ---
 name: auditoria
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Califica el asistente del dueño de 0 a 100 en cinco pilares (Conocimiento, Alcance, Habilidades, Memoria, Autonomía), detecta los archivos que faltan y devuelve los tres huecos más grandes con su siguiente paso concreto; guarda el informe en informes/auditoria-AAAA-MM-DD.md. La llama /conoceme al cerrar la entrevista.
+description: Solo dentro del kit La FactorIA: no aplica fuera de esta carpeta. Califica el asistente del dueño de 0 a 100 en cinco pilares (Conocimiento, Alcance, Habilidades, Memoria, Autonomía), detecta los archivos que faltan y devuelve los tres huecos más grandes con su siguiente paso concreto; guarda el informe en informes/auditoria-AAAA-MM-DD.md. La llama /conoceme al cerrar la entrevista.
 disable-model-invocation: true
 ---
 
@@ -59,14 +59,17 @@ cabecera).
 Máximo 20. **El crédito parcial por `anotado` es deliberado**: apuntar la
 herramienta ya cambia el consejo que te da tu asistente, aunque no la toque.
 
-Este pilar va a marcar bajo y está bien. El kit viene desconectado a propósito.
+Este pilar va a marcar bajo al principio y está bien: el kit llega anotando
+herramientas, no abriéndolas. El camino para subirlo es `/conectar`, que
+investiga cómo conectar una de verdad y deja el plan escrito en `planes/`.
+Nómbralo en los huecos cuando este pilar sea uno de los tres.
 
 ### Pilar 3: Habilidades (20) - ¿qué sabe hacer?
 
 | Condición | Puntos |
 |---|---|
-| Las 7 habilidades del kit están en `.claude/skills/` | 4 |
-| 1 o más habilidades que agregó el dueño (una octava carpeta con `SKILL.md`) | 8 |
+| Las 8 habilidades del kit están en `.claude/skills/` | 4 |
+| 1 o más habilidades que agregó el dueño (una novena carpeta con `SKILL.md`) | 8 |
 | 1 o más archivos en `plantillas/` además de `LEEME.md` | 8 |
 
 Máximo 20.
@@ -172,8 +175,8 @@ vez de esperar a que la herramienta se queje. Es la única red que hay.
 ## Nota sobre los permisos y el diálogo de confianza
 
 **Medido en la misma prueba:** hasta que la carpeta no se marca como de
-confianza, Claude Code **ignora las siete reglas** de `.claude/settings.json` y
-lo dice así: `Ignoring 7 permissions.allow entries from .claude/settings.json:
+confianza, Claude Code **ignora las ocho reglas** de `.claude/settings.json` y
+lo dice así: `Ignoring 8 permissions.allow entries from .claude/settings.json:
 this workspace has not been trusted`.
 
 Es decir: el diálogo de confianza que aparece la primera vez **no es un trámite**,

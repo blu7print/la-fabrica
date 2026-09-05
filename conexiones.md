@@ -9,7 +9,8 @@ configuración: apuntar una herramienta aquí no la conecta a nada.
 - **conectado**: tu asistente la lee o le escribe de verdad. Eso es trabajo de
   instalación, no algo que se resuelva escribiendo en este archivo.
 
-`/conoceme` la llena en estado `anotado`. Pasar algo a `conectado` es otro día.
+`/conoceme` la llena en estado `anotado`. Para pasar algo a `conectado`, escribe
+`/conectar`: investiga las vías reales y te deja el plan escrito en `planes/`.
 
 | Herramienta | Para qué la usas | Estado | Notas |
 |---|---|---|---|

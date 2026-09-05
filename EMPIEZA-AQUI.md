@@ -1,12 +1,12 @@
 # Empieza aquí
 
-Esta carpeta es **tu Fábrica**: de aquí van a salir los asistentes que uses para
+Esta carpeta es **tu FactorIA**: de aquí van a salir los asistentes que uses para
 tu negocio, y ella misma es el primero. Todavía no sabe nada de ti: en unos diez
 minutos va a saber quién eres, a quién le vendes, cómo escribes y qué no debe
 hacer sin preguntarte.
 
-Se llama La Fábrica. Al arrancar te pregunta si quieres ponerle otro nombre, y si
-no, La Fábrica está bien.
+Se llama La FactorIA. Al arrancar te pregunta si quieres ponerle otro nombre, y si
+no, La FactorIA está bien.
 
 Si acabas de instalarla, escribe **`/conoceme`** y dale enter. Todo lo demás de este
 archivo es para después.
@@ -17,7 +17,7 @@ archivo es para después.
 
 ---
 
-## Las siete cosas que sabe hacer
+## Las ocho cosas que sabe hacer
 
 Escribe el comando con la barra `/` y dale enter.
 
@@ -29,6 +29,7 @@ Escribe el comando con la barra `/` y dale enter.
 | `/auditoria` | Te pone un puntaje de 0 a 100 y te dice los tres huecos más grandes. |
 | `/fabrica` | Crea un asistente que hace una sola cosa (cotizar, contestar clientes). |
 | `/siguiente-nivel` | Una vez por semana: encuentra algo repetitivo y lo convierte en algo que se hace solo. |
+| `/conectar` | Investiga cómo conectar una herramienta que ya usas y te deja el plan escrito. |
 | `/actualizar` | Trae la versión nueva del kit sin tocar nada de lo tuyo. |
 
 ---
@@ -41,6 +42,23 @@ Escribe **"recuerda esto"** y luego el dato. Por ejemplo:
 
 Queda como un archivo en `memoria/`, que puedes abrir, corregir o borrar cuando
 quieras. Es tuyo y viaja contigo si copias la carpeta a otra computadora.
+
+---
+
+## Cómo se conecta a tus herramientas
+
+De entrada tu asistente vive dentro de esta carpeta: lee y escribe tus archivos,
+y anota qué herramientas usas, pero no las abre.
+
+Escribe **`/conectar`**, dile qué herramienta quieres conectar y para qué, y te
+investiga las vías reales, te propone dos o tres caminos y te deja el plan escrito
+en `planes/`. No instala nada: el plan queda listo para ejecutarlo el día que
+quieras, con calma.
+
+**`planes/` es la carpeta de todos tus planes**, no solo los de conectar. Pídele
+"hazme un plan para contratar a alguien" o "arma el plan de la campaña de
+diciembre" y lo escribe ahí, con los pasos, para que puedas ejecutarlo otro día
+sin volver a pensarlo.
 
 ---
 
@@ -59,7 +77,7 @@ te gusta, con decirle "deshaz la actualización" vuelve a como estaba.
 
 Al instalarla quedó como un repositorio de git tuyo, sin ninguna conexión con el
 nuestro. No tienes que hacer nada con eso: está ahí para que el día que quieras
-respaldar tu Fábrica en tu propio GitHub sean dos comandos.
+respaldar tu FactorIA en tu propio GitHub sean dos comandos.
 
 ---
 

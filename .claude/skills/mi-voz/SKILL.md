@@ -1,6 +1,6 @@
 ---
 name: mi-voz
-description: Solo dentro del kit La Fábrica: no aplica fuera de esta carpeta. Redacta cualquier mensaje, correo, propuesta o publicación con la forma de escribir del dueño, leyendo contexto/voz.md; devuelve el borrador en el chat y no escribe ningún archivo.
+description: Solo dentro del kit La FactorIA: no aplica fuera de esta carpeta. Redacta cualquier mensaje, correo, propuesta o publicación con la forma de escribir del dueño, leyendo contexto/voz.md; devuelve el borrador en el chat y no escribe ningún archivo.
 ---
 
 # /mi-voz
